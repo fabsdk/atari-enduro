@@ -8,7 +8,7 @@ import pickle
 random.seed(0)
 np.random.seed(0)
 
-numEpocas =  
+numEpocas = 500 
 fatorDesconto = 0.8
 taxaAprendizado = 0.9
 intervaloRelatorio = 500
