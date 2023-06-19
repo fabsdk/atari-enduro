@@ -59,6 +59,7 @@ def main():
         epocaRecompensa = 0
         # printa a epoca atual
         print("Epoca :", epoca)
+
         while True:
             # numero aleatório para escolher a ação
             randAcao = np.random.random()
@@ -98,7 +99,8 @@ def main():
             if fim:
                 recompensas.append(epocaRecompensa)
                 break
-
+            
+    # salva a tabela Q_table em um arquivo pickle
     pickle_file = open('treinamento.pickle', 'wb')
     pickle.dump(Q, pickle_file)
     pickle_file.close()
